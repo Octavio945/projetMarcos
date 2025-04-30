@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    overflow: auto;
+    line-height: 1.5;
+}
+h1{
+    color:rgb(116, 85, 151);
+    font-size: 50px;
+}
+
+h3{
+    color:rgb(116, 85, 151);
+}
+.container{
+    display: flex;
+    width: 2480px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left_part {
+    width: 250px;
+    padding: 40px;
+    padding-top: 150px;
+    background-color: rgb(225, 216, 235);
+    height: 100vh;
+}
+.rigth_part {
+    width: 650px;
+    padding: 40px;
+    padding-top: 170px;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+
+.images_content img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.descip_name{
+    text-align: center;
+}
+
+.rigth_part hr {
+    border: 2px solid rgb(116, 85, 151);
+    margin-left: -30px;
+}
+
+.name_part{
+    line-height: 1;
+    margin-bottom: 40px;
+    color:rgb(116, 85, 151);
+}
+
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: rgb(116, 85, 151);
+    --left-bg-color: rgb(225, 216, 235);
+    --right-bg-color: rgb(241, 241, 241);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.bullet-list {
+    list-style-type: disc;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.left_part {
+    width: 30%;
+    padding: 2rem;
+    background-color: var(--left-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rigth_part {
+    width: 70%;
+    padding: 2rem;
+    background-color: var(--right-bg-color);
+}
+
+.images_content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.images_content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact_content, .skills_content {
+    margin-bottom: 2rem;
+}
+
+.contact_content li, .skills_content li {
+    margin-bottom: 0.5rem;
+}
+
+.descip_name {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name_part {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.name_part div {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.description_part {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.rigth_part hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+.experien_part, .educ_part, .certif_part {
+    margin-bottom: 2rem;
+}
+
+.experien_part > div, .educ_part > div {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experien_part p, .educ_part p {
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.experien_part ul, .certif_part ul {
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left_part, .rigth_part {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .left_part {
+        padding-bottom: 2rem;
+    }
+    
+    .images_content img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .images_content img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .left_part, .rigth_part {
+        padding: 1rem;
+    }
+}
